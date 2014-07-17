@@ -19,6 +19,7 @@ abstract class AppController extends Controller {
 				// The controller action 'add' will map to the AddCrudAction
 				'view'  => 'Crud.View',
 				'add'  => 'Crud.add',
+				'delete'  => 'Crud.delete'
 			),
 			'listeners' => array(
 				'Api' => array(

@@ -9,6 +9,8 @@
 	</div><!-- end row -->
 
 
+	<?= $this->element('Carebot.location_map'); ?>
+
 
 	<div class="row">
 
@@ -18,7 +20,7 @@
 					<tr>
 						<th><?php echo $this->Paginator->sort('latitude'); ?></th>
 						<th><?php echo $this->Paginator->sort('longitude'); ?></th>
-						<th class="actions"></th>
+						<th class="actions">actions</th>
 					</tr>
 				</thead>
 				<tbody>

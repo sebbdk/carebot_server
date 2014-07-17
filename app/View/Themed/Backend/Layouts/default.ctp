@@ -33,6 +33,13 @@
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
+
+		echo $this->Html->script([
+			'//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js',
+			'dropdown',
+			'backend'
+		]);
+
 		echo $this->fetch('script');
 	?>
 
@@ -68,10 +75,6 @@
 		<?= $this->Session->flash(); ?>
 
 		<?= $this->fetch('content'); ?>
-
-		<?= $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'); ?>
-		<?= $this->Html->script('dropdown'); ?>
-		<?= $this->Html->script('backend'); ?>
 
 	    <div class="jumbotron">
 			<?php //echo $this->element('sql_dump'); ?>

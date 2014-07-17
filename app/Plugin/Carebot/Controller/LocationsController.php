@@ -8,6 +8,11 @@ App::uses('AppController', 'Controller');
  */
 class LocationsController extends AppController {
 
+	public $paginate = [
+		'order' => 'created desc',
+		'limit' => 100
+	];
+
 	public function beforeFilter() {
 		parent::beforeFilter();
 		$this->response->header('Access-Control-Allow-Origin: *');
